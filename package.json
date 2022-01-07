@@ -1,13 +1,22 @@
 {
-  "name": "vue-cascade",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@codermino/vue-cascade",
+  "version": "1.0.0",
+  "private": false,
+  "author": "codermino",
+  "description": "使用vue结合element-ui左侧选择影响右侧类型。",
+  "keyword": "vue cascade components",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "components": "vue-cli-service build --target lib --name vue-cascade src/components/selectCombom/index.js"
+  },
+  "repository": {
+    "url": "https://github.com/codermino/vueCascade.git"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
@@ -15,6 +24,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "babel-plugin-component": "^1.1.1",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
